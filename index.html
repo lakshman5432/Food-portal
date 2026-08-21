@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Bite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🍔 Cloud Bite</div>
+
+        <input type="text" id="search" placeholder="Search food...">
+
+        <div class="cart-btn">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="pic 1.jpeg" alt="Restaurant">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered To Your Door</h1>
+            <p>Fresh • Fast • Tasty</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2>Our Special Menu</h2>
+
+        <div class="menu-container" id="menu-container">
+            <!-- Food cards will be added using JavaScript -->
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            Total: ₹<span id="total-price">0</span>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Place Order
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
